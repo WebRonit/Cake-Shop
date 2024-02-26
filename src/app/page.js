@@ -27,7 +27,7 @@ export default function Home() {
           <a className={styles.navLink} href="#">Contact</a>
           <a className={styles.navLink} href="#">Orders</a>
 
-          <a className={styles.orderBtn} href="#">Order Now</a>
+          <a className={styles.orderBtn} href="/order">Order Now</a>
         </div>
       </nav><div style={{paddingTop:'60px'}}></div> 
 
@@ -39,7 +39,7 @@ export default function Home() {
             <p className={styles.headerTitle}>Custom cakes for every occasion</p>
             <p>Order a custom cake for your birthdays and weddings</p><br/>
             <div>
-              <a className={styles.orderBtn} href="#">Order Now</a>
+              <a className={styles.orderBtn} href="/order">Order Now</a>
               <a className={styles.btn} href="#">Explore cakes</a>
             </div>
           </div>
