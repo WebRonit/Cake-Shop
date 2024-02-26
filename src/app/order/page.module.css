@@ -1,0 +1,35 @@
+.mainCont{
+	display: flex;
+	flex-direction: column;
+	width: 400px;
+	padding: 20px 30px;
+	margin: 0 auto;
+/*	background-color: rgb(240, 240, 240, 1.0);*/
+}
+
+.mainCont .p1{
+	font-size: 25px;
+	margin-bottom: 30px;
+}
+
+.mainCont input{	
+	padding: 10px;
+	margin-bottom: 10px;
+	border: solid 1px rgb(220, 220, 220, 1.0);
+	outline: none;
+	border-radius: 10px;
+}
+
+.uploadBtn{
+	padding: 10px;
+	border-radius: 10px;
+	background: #f5427e;
+	text-align: center;
+	color: #fff;
+}
+
+.p2{
+	font-size: 17px;
+	font-weight: bold;
+	margin-top: 20px;
+}
