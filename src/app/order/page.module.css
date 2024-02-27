@@ -1,3 +1,10 @@
+.wrap{
+	width: 100%;
+}
+
+.gap-b{
+	margin: 5px;
+}
 .mainCont{
 	display: flex;
 	flex-direction: column;
@@ -8,6 +15,7 @@
 }
 
 .mainCont .p1{
+	text-align: center;
 	font-size: 25px;
 	margin-bottom: 30px;
 }
@@ -18,6 +26,7 @@
 	border: solid 1px rgb(220, 220, 220, 1.0);
 	outline: none;
 	border-radius: 10px;
+	font-size: 15px;
 }
 
 .uploadBtn{
@@ -26,10 +35,48 @@
 	background: #f5427e;
 	text-align: center;
 	color: #fff;
+	cursor: pointer;
+}
+
+.uploadBtn svg{
+	vertical-align: middle;
+	margin-left: 15px;
+	fill: #fff;
 }
 
 .p2{
 	font-size: 17px;
 	font-weight: bold;
 	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.mainCont input[type="radio"]{
+	margin-right: 2px;
+	height: 15px;
+	width: 15px;
+}
+
+.l1{
+	padding: 5px;
+	margin: 5px;
+	border: solid 1px #f5427e;
+	border-radius: 10px;
+}
+
+.l1 svg{
+	margin-left: 3px;
+}
+
+.submitBtn{
+	width: 150px;
+	padding: 10px 0;
+	margin: 10px auto;
+	border: none;
+	border-radius: 7px;
+	background-color:  #f5427e;
+	color: #fff;
+	font-size: 15px;
+	font-weight: bold;
+	cursor: pointer;
 }
