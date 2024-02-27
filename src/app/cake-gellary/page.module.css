@@ -1,0 +1,16 @@
+.title{
+	padding: 10px;
+	text-align: center;
+}
+
+.imgContainer{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+
+.imgContainer img{
+	margin: 20px;
+}

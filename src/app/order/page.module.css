@@ -1,4 +1,7 @@
 .wrap{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 	width: 100%;
 }
 
@@ -27,6 +30,7 @@
 	outline: none;
 	border-radius: 10px;
 	font-size: 15px;
+	max-width: 360px;
 }
 
 .uploadBtn{
@@ -42,6 +46,7 @@
 	vertical-align: middle;
 	margin-left: 15px;
 	fill: #fff;
+	max-width: 360px;
 }
 
 .p2{
@@ -52,7 +57,10 @@
 }
 
 .mainCont input[type="radio"]{
+	position: relative;
+	top: 2px;
 	margin-right: 2px;
+    display: inline;
 	height: 15px;
 	width: 15px;
 }
@@ -80,3 +88,16 @@
 	font-weight: bold;
 	cursor: pointer;
 }
+
+
+
+
+
+@media only screen and (max-width:400px){
+
+   .mainCont{
+   	  width: 300px;
+   	  padding: 0;
+   }
+}
+

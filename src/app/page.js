@@ -1,12 +1,18 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 import logo from './images/cakeLogo.png'
 import cakeImg from './images/cake.jpg'
-import cakeImg1 from './images/cake1.jpg'
+import cakeImg1 from './images/cake1.jpeg'
 import cakeImg2 from './images/cake2.jpg'
-import cakeImg3 from './images/cake3.jpg'
+import cakeImg3 from './images/cake3.jpeg'
 import cakeImg4 from './images/cake4.jpg'
 import cakeImg5 from './images/cake5.jpg'
+import cakeImg6 from './images/cake6.jpg'
+import cakeImg7 from './images/cake7.jpg'
+import cakeImg8 from './images/cake8.jpg'
+import cakeImg9 from './images/cake9.jpg'
+
 
 import styles from "./page.module.css";
 
@@ -27,7 +33,7 @@ export default function Home() {
           <a className={styles.navLink} href="#">Contact</a>
           <a className={styles.navLink} href="#">Orders</a>
 
-          <a className={styles.orderBtn} href="/order">Order Now</a>
+          <Link className={styles.orderBtn} href="/order">Order Now</Link> 
         </div>
       </nav><div style={{paddingTop:'60px'}}></div> 
 
@@ -39,8 +45,8 @@ export default function Home() {
             <p className={styles.headerTitle}>Custom cakes for every occasion</p>
             <p>Order a custom cake for your birthdays and weddings</p><br/>
             <div>
-              <a className={styles.orderBtn} href="/order">Order Now</a>
-              <a className={styles.btn} href="#">Explore cakes</a>
+              <Link className={styles.orderBtn} href="/order">Order Now</Link>
+              <a className={styles.btn} href="#explore">Explore cakes</a>
             </div>
           </div>
         </div>
@@ -49,45 +55,15 @@ export default function Home() {
       <main>
 
         <div className={styles.cakeContainer}>
-          <p className={styles.p1}>Popular Cakes</p>
+          <p className={styles.p1} id='explore'>Popular Cakes</p>
           <div className={styles.cakeWrapper}>
 
           <div className={styles.cakes}>
             <div className={styles.imgCont}>
-              <Image src={cakeImg} alt="cake" width={400} className={styles.cakesImg}/>
+              <Image src={cakeImg5} alt="cake" width={400} className={styles.cakesImg}/>
             </div>
             <div className={styles.cakeInfoCont}>
-              <p>Red velvet cake</p>
-              <p>₹400</p>
-            </div>
-          </div>
-
-          <div className={styles.cakes}>
-            <div className={styles.imgCont}>
-              <Image src={cakeImg1} alt="cake" width={400} className={styles.cakesImg}/>
-            </div>
-            <div className={styles.cakeInfoCont}>
-              <p>Red velvet cake</p>
-              <p>₹400</p>
-            </div>
-          </div>
-
-          <div className={styles.cakes}>
-            <div className={styles.imgCont}>
-              <Image src={cakeImg2} alt="cake" width={400} className={styles.cakesImg}/>
-            </div>
-            <div className={styles.cakeInfoCont}>
-              <p>Red velvet cake</p>
-              <p>₹400</p>
-            </div>
-          </div>
-
-          <div className={styles.cakes}>
-            <div className={styles.imgCont}>
-              <Image src={cakeImg3} alt="cake" width={400} className={styles.cakesImg}/>
-            </div>
-            <div className={styles.cakeInfoCont}>
-              <p>Red velvet cake</p>
+              <p>Pink cream cake</p>
               <p>₹400</p>
             </div>
           </div>
@@ -97,23 +73,66 @@ export default function Home() {
               <Image src={cakeImg4} alt="cake" width={400} className={styles.cakesImg}/>
             </div>
             <div className={styles.cakeInfoCont}>
-              <p>Red velvet cake</p>
+              <p>Rose top cake</p>
               <p>₹400</p>
             </div>
           </div>
 
           <div className={styles.cakes}>
             <div className={styles.imgCont}>
-              <Image src={cakeImg5} alt="cake" width={400} className={styles.cakesImg}/>
+              <Image src={cakeImg6} alt="cake" width={400} className={styles.cakesImg}/>
+            </div> 
+            <div className={styles.cakeInfoCont}>
+              <p>Red berry cake</p>
+              <p>₹400</p>
+            </div>
+          </div>
+
+          <div className={styles.cakes}>
+            <div className={styles.imgCont}>
+              <Image src={cakeImg1} alt="cake" width={400} className={styles.cakesImg}/>
             </div>
             <div className={styles.cakeInfoCont}>
-              <p>Red velvet cake</p>
+              <p>Flower top cake</p>
+              <p>₹400</p>
+            </div>
+          </div>
+
+          <div className={styles.cakes}>
+            <div className={styles.imgCont}>
+              <Image src={cakeImg7} alt="cake" width={400} className={styles.cakesImg}/>
+            </div>
+            <div className={styles.cakeInfoCont}>
+              <p>Double stack cake</p>
+              <p>₹800</p>
+            </div>
+          </div>
+
+          <div className={styles.cakes}>
+            <div className={styles.imgCont}>
+              <Image src={cakeImg8} alt="cake" width={400} className={styles.cakesImg}/>
+            </div>
+            <div className={styles.cakeInfoCont}>
+              <p>Butterfly cake</p>
               <p>₹400</p>
             </div>
           </div>
 
 
           </div>
+        </div>
+
+        <div className={styles.gellaryCont}>
+            <h3 className={styles.p2} id='explore'>Cake gellary</h3><br />
+            <marquee>
+              <div className={styles.wrap}>
+                <div className={styles.movingImg}><Image src={cakeImg1} alt="cake" width={300}/></div>
+                <div className={styles.movingImg}><Image src={cakeImg3} alt="cake" width={300}/></div>
+                <div className={styles.movingImg}><Image src={cakeImg4} alt="cake" width={300}/></div>
+                <div className={styles.movingImg}><Image src={cakeImg5} alt="cake" width={300}/></div>
+              </div>
+            </marquee>
+            <Link href='cake-gellary' className={styles.gellaryBtn}>View Gellary</Link>
         </div>
       </main>
 
@@ -129,7 +148,6 @@ export default function Home() {
            <a href="#">About</a>
            <a href="#">Contact Us</a>
            <a href="#">Terms and conditions</a>
-
          </div>
 
       </footer>
