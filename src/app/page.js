@@ -148,6 +148,7 @@ export default function Home() {
            <a href="#">About</a>
            <a href="#">Contact Us</a>
            <a href="#">Terms and conditions</a>
+           <Link href="/dashboard">Dashboard</Link>
          </div>
 
       </footer>
