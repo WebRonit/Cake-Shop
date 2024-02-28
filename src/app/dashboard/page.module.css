@@ -1,0 +1,182 @@
+.navbar{
+    position: fixed;
+    padding: 15px 20px;
+    max-height: 57px;
+    width: 100%;
+    background-color: rgba(250, 250, 250, 0.8);
+    backdrop-filter: blur(15px);
+    border-bottom: solid 1px rgba(201, 201, 201, 0.5);
+    z-index: 9;
+}
+
+.logo{
+    position: relative;
+    top: -5px;
+    display: inline;
+    vertical-align: middle;
+}
+
+.navbar .title{
+    position: relative;
+    top: -5px;
+    display: inline;
+    font-size: 17px;
+    font-weight: bold;
+    color: black;
+    line-height: 0;
+    margin-top: -10px;
+}
+
+.floatRight{
+    float: right;
+    display: inline;
+}
+
+.floatRightBtn{
+    display: inline;
+}
+
+.navLink{
+    text-decoration: none;
+    padding: 5px;
+    margin-right: 25px;
+    color: black;
+}
+
+.orderBtn, .gellaryBtn{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #e4174f;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+.search{
+    padding: 10px;
+    margin-left: 15%;
+    outline: none;
+    border: solid 2px lightgrey;
+    border-radius: 10px;
+}
+
+.mainContainer{
+    width: 70%;
+    height: 500px;
+    margin: 10px auto;
+    border: solid 1px lightgrey;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.infoHead{
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    border-bottom: solid 1px lightgrey;
+}
+
+.p1{
+   width: 10%;
+}
+
+.p2{
+    width: 15%;
+}
+
+.p3{
+    width: 25%;
+}
+
+.p4{
+    padding: 0 20px;
+}
+
+.p15{
+    width: 7%;
+}
+
+.orderCont{
+    overflow: auto;
+    height: 450px;
+}
+
+
+.order{
+    display: flex;
+    padding: 20px 10px;
+    border-bottom: solid 1px lightgrey;
+    background-color: #fff;
+}
+
+.orderCont div:nth-child(even){
+    background-color: rgba(240, 240, 240, 1.0);
+}
+
+
+.orderCont::-webkit-scrollbar{
+    width: 0;
+}
+
+.infoName{
+    display: none;
+    font-weight: bold;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1075px){
+
+    .mainContainer{
+        width: 90%;
+    }
+
+    .search{
+        margin-left: 5%;
+    }
+
+}
+
+@media only screen and (max-width: 845px){
+
+    .mainContainer{
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 768px){
+
+    .infoHead{
+        display: none;
+    }
+
+    .order{
+        flex-direction: column;
+    }
+
+    .order p{       
+        width: 100%;
+    }
+
+    .infoName{
+        display: inline-block;
+        width: 120px;
+    }
+
+    .mainContainer{
+        border-radius: 0;
+        margin-bottom: 0;
+        height: calc(100vh - 115px);
+    }
+
+    .orderCont{
+        height: calc(100vh - 115px);
+    }
+
+}
