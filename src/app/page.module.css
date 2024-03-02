@@ -141,7 +141,7 @@
 
 .cakes:hover{
     transform: translateY(-10px);
-    box-shadow: 0 5px 20px rgba(228, 23, 78, 0.2);
+    box-shadow: 0 5px 20px rgba(228, 23, 78, 0.35);
 }
 
 .p1{
