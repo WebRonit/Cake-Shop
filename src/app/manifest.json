@@ -1,0 +1,25 @@
+{
+  "short_name": "mcake",
+  "name": "M cake",
+  "icons": [
+    {
+      "src": "images/cakeLogo.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "images/cakeLogo.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "images/cakeLogo.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#e4174f",
+  "background_color": "#ffffff"
+}
