@@ -1,9 +1,5 @@
-'use client';
-
 import Image from 'next/image';
 import Link from 'next/link';
-// import { PagesProgressBar as ProgressBar } from 'nextjs-progressbar';
-import NextNProgress from 'nextjs-progressbar';
 
 import logo from './images/cakeLogo.png'
 import cakeImg from './images/cake.jpg'
@@ -25,8 +21,6 @@ export default function Home() {
    
     <>
       <nav className={styles.navbar}>
-
-        <NextNProgress color='red'/>
           <Image src={logo} alt="cake" width={40} className={styles.logo}/>  
           <p className={styles.title}>Cake Delight</p>
 
