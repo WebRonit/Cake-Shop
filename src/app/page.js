@@ -1,5 +1,9 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
+// import { PagesProgressBar as ProgressBar } from 'nextjs-progressbar';
+import NextNProgress from 'nextjs-progressbar';
 
 import logo from './images/cakeLogo.png'
 import cakeImg from './images/cake.jpg'
@@ -20,10 +24,9 @@ export default function Home() {
   return (
    
     <>
-
       <nav className={styles.navbar}>
 
-
+        <NextNProgress color='red'/>
           <Image src={logo} alt="cake" width={40} className={styles.logo}/>  
           <p className={styles.title}>Cake Delight</p>
 
@@ -60,7 +63,7 @@ export default function Home() {
 
           <div className={styles.cakes}>
             <div className={styles.imgCont}>
-              <Image src={cakeImg5} alt="cake" width={300} className={styles.cakesImg}/>
+              <Image src={cakeImg5} alt="cake" width={300} className={styles.cakesImg2}/>
             </div>
             <div className={styles.cakeInfoCont}>
               <p>Pink cream cake</p>
@@ -70,7 +73,7 @@ export default function Home() {
 
           <div className={styles.cakes}>
             <div className={styles.imgCont}>
-              <Image src={cakeImg4} alt="cake" width={300} className={styles.cakesImg}/>
+              <Image src={cakeImg4} alt="cake" width={300} className={styles.cakesImg2}/>
             </div>
             <div className={styles.cakeInfoCont}>
               <p>Rose top cake</p>
@@ -80,7 +83,7 @@ export default function Home() {
 
           <div className={styles.cakes}>
             <div className={styles.imgCont}>
-              <Image src={cakeImg6} alt="cake" width={300} className={styles.cakesImg}/>
+              <Image src={cakeImg6} alt="cake" width={350} className={styles.cakesImg2}/>
             </div> 
             <div className={styles.cakeInfoCont}>
               <p>Red berry cake</p>
@@ -90,7 +93,7 @@ export default function Home() {
 
           <div className={styles.cakes}>
             <div className={styles.imgCont}>
-              <Image src={cakeImg1} alt="cake" width={300} className={styles.cakesImg}/>
+              <Image src={cakeImg1} alt="cake" width={350} className={styles.cakesImg2}/>
             </div>
             <div className={styles.cakeInfoCont}>
               <p>Flower top cake</p>
@@ -100,7 +103,7 @@ export default function Home() {
 
           <div className={styles.cakes}>
             <div className={styles.imgCont}>
-              <Image src={cakeImg7} alt="cake" width={300} className={styles.cakesImg}/>
+              <Image src={cakeImg7} alt="cake" width={350} className={styles.cakesImg2}/>
             </div>
             <div className={styles.cakeInfoCont}>
               <p>Double stack cake</p>
@@ -110,7 +113,7 @@ export default function Home() {
 
           <div className={styles.cakes}>
             <div className={styles.imgCont}>
-              <Image src={cakeImg8} alt="cake" width={300} className={styles.cakesImg}/>
+              <Image src={cakeImg8} alt="cake" width={350} className={styles.cakesImg2}/>
             </div>
             <div className={styles.cakeInfoCont}>
               <p>Butterfly cake</p>
@@ -148,11 +151,11 @@ export default function Home() {
            <a href="#">About</a>
            <a href="#">Contact Us</a>
            <a href="#">Terms and conditions</a>
-           <Link href="/dashboard">Dashboard</Link>
+           <Link href="/dashboard">Dashboard</Link>                                                             
          </div>
 
       </footer>
-    
+  
     </>
 
   );
