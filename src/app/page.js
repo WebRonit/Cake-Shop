@@ -60,7 +60,7 @@ export default function Home() {
 
           <div className={styles.cakes}>
             <div className={styles.imgCont}>
-              <Image src={cakeImg5} alt="cake" width={350} className={styles.cakesImg}/>
+              <Image src={cakeImg5} alt="cake" width={300} className={styles.cakesImg}/>
             </div>
             <div className={styles.cakeInfoCont}>
               <p>Pink cream cake</p>
@@ -70,7 +70,7 @@ export default function Home() {
 
           <div className={styles.cakes}>
             <div className={styles.imgCont}>
-              <Image src={cakeImg4} alt="cake" width={350} className={styles.cakesImg}/>
+              <Image src={cakeImg4} alt="cake" width={300} className={styles.cakesImg}/>
             </div>
             <div className={styles.cakeInfoCont}>
               <p>Rose top cake</p>
@@ -80,7 +80,7 @@ export default function Home() {
 
           <div className={styles.cakes}>
             <div className={styles.imgCont}>
-              <Image src={cakeImg6} alt="cake" width={350} className={styles.cakesImg}/>
+              <Image src={cakeImg6} alt="cake" width={300} className={styles.cakesImg}/>
             </div> 
             <div className={styles.cakeInfoCont}>
               <p>Red berry cake</p>
@@ -90,7 +90,7 @@ export default function Home() {
 
           <div className={styles.cakes}>
             <div className={styles.imgCont}>
-              <Image src={cakeImg1} alt="cake" width={350} className={styles.cakesImg}/>
+              <Image src={cakeImg1} alt="cake" width={300} className={styles.cakesImg}/>
             </div>
             <div className={styles.cakeInfoCont}>
               <p>Flower top cake</p>
@@ -100,7 +100,7 @@ export default function Home() {
 
           <div className={styles.cakes}>
             <div className={styles.imgCont}>
-              <Image src={cakeImg7} alt="cake" width={350} className={styles.cakesImg}/>
+              <Image src={cakeImg7} alt="cake" width={300} className={styles.cakesImg}/>
             </div>
             <div className={styles.cakeInfoCont}>
               <p>Double stack cake</p>
@@ -110,7 +110,7 @@ export default function Home() {
 
           <div className={styles.cakes}>
             <div className={styles.imgCont}>
-              <Image src={cakeImg8} alt="cake" width={350} className={styles.cakesImg}/>
+              <Image src={cakeImg8} alt="cake" width={300} className={styles.cakesImg}/>
             </div>
             <div className={styles.cakeInfoCont}>
               <p>Butterfly cake</p>
